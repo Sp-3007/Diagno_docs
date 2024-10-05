@@ -1,0 +1,88 @@
+.add-test-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #d1d5db; /* Light grey border */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+  background-color: #f9fafb; /* Very light grey background */
+  margin-top: 30px;
+}
+
+.add-test-form textarea,
+.add-test-form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px; /* Slightly more padding for better usability */
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffffff; /* White background for inputs */
+}
+
+.add-test-form .selected-test {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1f2937; /* Dark grey for better readability */
+}
+
+.add-test-form .submit-button {
+  padding: 12px 20px;
+  background-color: #3b82f6; /* Blue background for the button */
+  color: #ffffff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-test-form .submit-button:disabled {
+  background-color: #9ca3af; /* Grey color when disabled */
+}
+
+.add-test-form .submit-button:not(:disabled):hover {
+  background-color: #2563eb; /* Slightly darker blue on hover */
+}
+
+/* Styling for the SearchBar */
+.search-bar-container {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.search-bar-container input {
+  width: 100%;
+  padding: 12px; /* Consistent padding */
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+.search-bar-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #d1d5db;
+  border-top: none;
+  background-color: #ffffff; /* White background for suggestions */
+  z-index: 1000;
+  max-height: 200px; /* Limit height for better usability */
+  overflow-y: auto; /* Enable scrolling */
+}
+
+.search-bar-suggestions li {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #1f2937; /* Dark grey text color */
+}
+
+.search-bar-suggestions li:hover {
+  background-color: #e5e7eb; /* Light grey on hover */
+}

@@ -1,0 +1,83 @@
+#registerdiv{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgb(178,219,251);
+}
+#rleft{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#rcontent{
+    margin-top: 5px;
+}
+#content h3{
+    font-weight:bolder;
+}
+.loginopt1, .loginopt2{
+    font-size: 1.2vw;
+    margin-left: 2vw;
+    border-radius: 1vw;
+    padding:1vh 1vw;
+}
+#rform{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+ #remailinp, #rpasswordinp, #rmobilenumberinp, #rconfirmpasswordinp{
+    
+    width: 100%;
+    height: 7vh;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.rformfield{
+    width: 100%;
+    padding-left: 30px;
+}
+#rname, #remail, #rpassword, #rmobilenumber{
+    font-size: 1.5vw;
+}
+#registerbutton {
+    font-size: 20px;
+    width: 50%;
+    padding: 1vh 1.5vh;
+    margin-top: 2vh;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#termsinp{
+    margin-top: 5px;
+}
+.termsandconditions{
+    margin-top: 2vh;
+} 
+#redirect{
+    text-align: center;
+}
+#choice{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+#choice div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#choice input[type="radio"]{
+    height:2vh;
+    width:2vw;
+}

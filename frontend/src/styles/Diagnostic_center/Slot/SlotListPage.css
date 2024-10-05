@@ -1,0 +1,77 @@
+/* SlotListPage.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+  }
+  
+  .slot-list-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slot-list-header {
+    margin-bottom: 20px;
+  }
+  
+  .slot-list-header h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .add-slot-button-redirect {
+    display: block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+    text-align: right;
+  }
+  
+  .add-slot-button-redirect:hover {
+    background-color: #2980b9;
+  }
+  
+  .slot-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slot-item p {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #34495e;
+  }
+  
+  .slot-item button {
+    padding: 8px 12px;
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slot-item button:hover {
+    background-color: #c0392b;
+  }
+  

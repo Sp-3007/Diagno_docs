@@ -1,0 +1,27 @@
+* {
+    font-family: 'Poppins', sans-serif; /* Modern and clean font */
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light background color */
+  }
+  
+  h2 {
+    height: 60px;
+    width: 100%;
+    font-size: 28px;
+    font-weight: 500;
+    background-color: #78a8c8; /* Soft blue background consistent with navbar */
+    color: #ffffff; /* White text color for contrast */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for the header */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for better spacing */
+  }
+  

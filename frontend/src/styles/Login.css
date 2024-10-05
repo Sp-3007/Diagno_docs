@@ -1,0 +1,74 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+
+.login-container{
+    height: 90vh;
+    background-color: rgb(178,219,251);
+}
+#inner-login{
+    display:flex;
+    height: 90%;
+    width: 30%;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+h1{
+    font-size: 5vh;
+    color: rgb(79, 82, 142);
+    margin-top: 14%;
+}
+#email,#password{
+    width: 100%;
+    height: 7vh;
+    font-weight: 500;
+    font-size: 19px;
+    margin-top: 5%;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+#forgot-link{
+    margin-top: 5%;
+    color: rgb(79, 82, 142);
+    font-weight: 800;
+    cursor: pointer;
+}
+.btn{
+    margin-top: 5%;
+    height: 7%;
+    background-color: rgb(136, 203, 208);
+    width: 35%;
+    border-radius: 20px;
+}
+#redirect{
+    height: 7%;
+    width: 35%;
+}
+#redirect .btn{
+    height: 100%;
+    width: 100%;
+}
+
+.google-btn {
+    background-color: #4285F4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    text-decoration: none; /* Removes the underline */
+}
+
+.google-btn:hover {
+    text-decoration: none; /* Ensures no underline on hover */
+}
+
+.google-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#google {
+    margin-top: 7%;
+}

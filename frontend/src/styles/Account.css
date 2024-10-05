@@ -1,0 +1,100 @@
+#amheading{
+    text-align: center;
+    font-size: 2.5vw;
+    color:rgb(79,82,142);
+}
+#accountdiv{
+    display:flex;
+    
+}
+#aleft{
+    /* height:85vh; */
+    width:30vw;
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap:3vh;
+    
+    
+    
+}
+#aright{
+    /* height:85vh; */
+    width:60vw;
+}
+#usermaininfo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#userp{
+   height:28vh;
+   width:15vw;
+}
+#aname{
+    font-weight: bold;
+
+}
+
+.arighttdiv{
+    height:10vh;
+    width:100%;
+    /* border:2px solid black; */
+
+}
+.arightbdiv{
+    padding-top:5vh;
+    height:60vh;
+    width:80%;
+    /* border:2px solid black; */
+    margin-top: 10vh;
+    background-color: rgb(217,217,217);
+    border-radius: 10px;
+
+}
+#sobutton{
+    font-size: 1.2vw;
+    padding: 0.5vw;
+    width:10vw;
+    border-radius:15px;
+    background-color: blue;
+    color:white;
+}
+#empty{
+    height:60vh;
+    width:80%;
+    /* border:2px solid black; */
+   
+
+    background-color: rgb(217,217,217);
+    border-radius: 10px;
+
+    
+}
+
+/* #usermoreinfo a.al h2 {
+    background-color: antiquewhite;
+} */
+#usermoreinfo a:hover h2 {
+    background-color: antiquewhite;
+}
+
+
+#usermoreinfo a.active-link h2 {
+    color: green; /* Change the color to green when the link is active */
+}
+#familybuttons{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.familymember{
+    height:7vh;
+    width:35%;
+    margin:5px 10px;
+    border-radius: 10px;
+    background-color: white;
+    color:black;
+}

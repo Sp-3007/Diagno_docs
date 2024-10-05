@@ -1,0 +1,76 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Ensure body has no extra margins */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Main container for appointments */
+  .appointments-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  /* Heading style for the appointments page */
+  .appointments-container h1 {
+    text-align: center;
+    color: #333;
+    margin: 0; /* Ensure no margin on top and bottom */
+    padding-bottom: 20px; /* Add padding below the heading for spacing */
+  }
+  
+  /* List styling for appointments */
+  .appointments-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Individual appointment item styling */
+  .appointment-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for appointment items */
+  .appointment-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Style for the user name in the appointment item */
+  .appointment-item h2 {
+    font-size: 1.2em;
+    color: #444;
+    margin: 0; /* Remove margin around the heading */
+  }
+  
+  /* Paragraph styling within appointment items */
+  .appointment-item p {
+    margin: 10px 0;
+  }
+  
+  /* Styling for strong text within paragraphs */
+  .appointment-item strong {
+    color: #555;
+  }
+  
+  /* Ensure no extra margin in error and loading messages */
+  .error-message, .loading-message {
+    text-align: center;
+    color: #ff4d4d;
+    font-size: 1.2em;
+    margin: 20px 0; /* Add margin only on top and bottom */
+  }
+  

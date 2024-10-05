@@ -1,0 +1,223 @@
+/* Ensure the body and html take up full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Remove background image from body */
+body {
+  background-color: #e0e4e8; /* Slightly darker fallback color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Background container styling */
+#back_g {
+  position: absolute; /* Positioning it relative to the page */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://caas.athenahealth.com/sites/default/files/styles/webp_image_style/public/2024/06/BNR_Updated.webp?itok=1aj2nFTL');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Modal overlay styling */
+.diagnostic-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start; /* Align modal to the left */
+  align-items: center; /* Center the modal vertically */
+}
+
+/* Modal styling */
+.diagnostic-modal {
+  width: 70%; /* Increase width */
+  max-width: 1000px; /* Increase maximum width */
+  max-height: 90vh; 
+  padding: 40px; /* Increase padding */
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Slightly softer shadow */
+  outline: none;
+  overflow-y: auto; /* Allow vertical scrolling */
+  position: relative;
+  margin-left: 20px; /* Margin from the left */
+  /* No need for background image in modal */
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Hide scrollbars while keeping scrolling functionality */
+.diagnostic-modal::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.diagnostic-modal::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Header styling */
+.modal-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.modal-header h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #444;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-align: center;
+  background: linear-gradient(145deg, #b4b8b9, #6e7d7d); /* Adjust gradient colors */
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), inset 1px 1px 2px rgba(255, 255, 255, 0.6);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Form styling */
+.diagnostic-form {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to multiple lines */
+  gap: 20px; /* Space between form fields */
+}
+
+/* Form group styling */
+.form-group {
+  flex: 1 1 45%; /* Flex basis for two columns */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Label styling */
+.form-group label {
+  font-weight: bold;
+  color: #444;
+}
+
+/* Input styling */
+.form-group input {
+  padding: 10px;
+  border: 1px solid #bbb; /* Slightly darker border */
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #f9f9f9; /* Light grey background for inputs */
+}
+
+/* Input focus styling */
+.form-group input:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit button styling */
+.submit-button {
+  background-color: #0056b3; /* Darker blue for better contrast */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #003d80; /* Even darker blue on hover */
+  transform: translateY(-2px);
+}
+
+.submit-button:active {
+  transform: translateY(1px);
+}
+
+/* Address container styling */
+.address-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the input field and button */
+}
+
+/* Get My Location button styling */
+.get-location-button {
+  background-color: #4CAF50; /* Green color for the button */
+  color: white;
+  border: none;
+  padding: 6px 10px; /* Smaller padding for a "cute" button */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.75rem; /* Smaller font size */
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button hover state */
+.get-location-button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+  transform: translateY(-1px);
+}
+
+/* Button active state */
+.get-location-button:active {
+  transform: translateY(1px);
+}
+
+/* Address input styling */
+.address-container input {
+  flex: 1; /* Allows the input to take up remaining space */
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 0.875rem;
+}
+
+/* Address input read-only styling */
+.address-container input:read-only {
+  background-color: #e0e4e8; /* Slightly different background for read-only */
+}
+
+.insurance-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.insurance-container select {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.insurance-container input {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+  display: none; /* Default to hidden */
+}
+
+/* Use a class to show the input field when needed */
+.show-input {
+  display: block;
+}

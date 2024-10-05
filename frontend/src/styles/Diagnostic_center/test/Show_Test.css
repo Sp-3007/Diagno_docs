@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Use Poppins font for a clean look */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light grey background */
+  }
+  
+  .add-test-button {
+    display: block;
+    height: 45px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #4f8fbb; /* Soft blue background */
+    color: white; /* White text color */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-test-button:hover {
+    background-color: #3e74a1; /* Darker blue on hover */
+  }
+  
+  .tests-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+  }
+  
+  .no-tests-available {
+    font-size: 20px;
+    color: #555; /* Dark grey color for no tests text */
+    text-align: center;
+    margin-top: 150px;
+  }
+  
+  .tests-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .test-item {
+    background-color: #ffffff; /* White background for test items */
+    border: 1px solid #e0e0e0; /* Light grey border */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .test-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  .test-item h3 {
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #333; /* Dark grey text color */
+    text-align: center;
+  }
+  
+  .test-item p {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666; /* Medium grey text color */
+  }
+  
+  .modify-button {
+    height: 35px;
+    width: 100px;
+    background-color: #6c63ff; /* Soft purple background */
+    color: white; /* White text color */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modify-button:hover {
+    background-color: #5347d9; /* Darker purple on hover */
+  }
+  

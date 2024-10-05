@@ -1,0 +1,95 @@
+* {
+  font-family: 'Poppins', sans-serif; /* Changed to Poppins for a modern look */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#main_nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #ffffff; /* White background */
+  transition: top 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for the navbar */
+}
+
+#main_nav.hidden {
+  top: -100px; /* Hide the navbar when scrolled up */
+}
+
+#topblock {
+  height: 15px;
+  width: 100%;
+  background-color: #4f8fbb; /* Soft blue background */
+}
+
+#d_navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+#nav_1 {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+#search_bar {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f9;
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search_bar input {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 5px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+#ui {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#ui li {
+  margin: 0 20px;
+}
+
+#ui li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333; /* Dark grey for links */
+  transition: color 0.3s;
+}
+
+#ui li a:hover {
+  color: #4f8fbb; /* Soft blue on hover */
+}
+
+.d_logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%; /* Make the profile picture round */
+  border: 2px solid #4f8fbb; /* Add a border to the profile picture */
+}
